@@ -27,7 +27,12 @@
 
 body {
     font-family: montserrat;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: var(--font-color-base);
     margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -40,9 +45,15 @@ a {
     text-decoration: none;
 }
 
+h2,
+h3 {
+    color: var(--black);
+    margin: 0;
+}
+
 p { 
-    color: var(--font-color-base);
     font-weight: 500;
+    margin: 0;
  }
 
 img {

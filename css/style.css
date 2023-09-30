@@ -51,10 +51,17 @@ nav {
     padding: var(--size-20) 0;
 }
 
-.intro-text p {  font-size: var(--size-18);}
+.intro-text p {
+    font-size: var(--size-18);
+}
 
-.black {  color: var(--black);}
-.white {color: var(--white);}
+.black {
+    color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
 
 header .header-links {
     display: flex;
@@ -111,6 +118,8 @@ button i {
     box-shadow: 0 16px 20px 7px #E0E0E0;
     padding: var(--size-30);
 }
+
+.info-card.btn {}
 
 .info-card img {
     width: 4.063rem;
@@ -182,31 +191,49 @@ button i {
     position: relative;
     top: var(--size-100);
 }
-.company-testimonial {text-align: center;}
+
+.company-testimonial {
+    text-align: center;
+}
 
 .company-testimonial img {
     width: var(--size-150);
     margin: var(--size-50) 0;
 }
 
-.title {margin: var(--size-50) 0;}
+.title {
+    margin: var(--size-50) 0;
+}
 
 .title h3 {
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-.voucher p {margin-top: 0;}
+.voucher p {
+    margin-top: 0;
+}
 
-.testimonial-trust {text-align: center;}
-.testimonial-trust h2 {color: #616368;}
-.testimonial-trust img{
+.testimonial-trust {
+    text-align: center;
+}
+
+.testimonial-trust h2 {
+    color: #616368;
+}
+
+.testimonial-trust img {
     width: var(--size-150);
     margin: var(--size-18) 14%;
 }
 
-.info-box {  margin: var(--size-40) 0;}
-.info-box .info-card {padding: var(--size-40);}
+.info-box {
+    margin: var(--size-40) 0;
+}
+
+.info-box .info-card {
+    padding: var(--size-40);
+}
 
 .pricing-top {
     border-bottom: 1px solid var(--font-color-base);
@@ -221,11 +248,12 @@ button i {
     margin: 0 var(--size-10);
 }
 
-.pricing-bottom {margin-top: var(--size-40);}
+.pricing-bottom {
+    margin-top: var(--size-40);
+}
 
 .pricing-bottom p {
     text-align: left;
-    margin: var(--size-70) 0;
 }
 
 .pricing-bottom p.no-card {
@@ -233,17 +261,17 @@ button i {
     margin-top: var(--size-30);
 }
 
-.pricing > .info-card {
+.pricing>.info-card {
     border: none;
     box-shadow: none;
     padding: var(--size-30);
 }
 
-.pricing .info-card .btn {
-    background-color: #5BC6A8;
+.info-card h3 .btn {
+    margin: var(--size-10);
+    font-size: var(--size-14);
     padding: 0.125rem var(--size-10);
-    font-weight: 500;
-    margin-left: var(--size-20);
+    background-color: #5BC6A8;
 }
 
 .hire-us {
@@ -257,8 +285,19 @@ button i {
     border-bottom: 1px solid var(--white);
 }
 
-.hire-us-top h2 {color: var(--white);}
+.hire-us-top h2 {
+    color: var(--white);
+}
 
 .hire-us-testimonials p.white {
     margin: var(--size-40) 0;
+    font-size: var(--size-18);
 }
+
+.hire-us-testimonials .testimonial-pic img {
+    border-radius: 50%;
+    width: var(--size-50);
+    margin: var(--size-14);
+}
+
+.hire-us-testimonials .testimonial-pic .testimonial-pic-lg {width: var(--size-70);}
