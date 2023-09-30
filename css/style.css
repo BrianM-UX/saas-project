@@ -54,6 +54,7 @@ nav {
 .intro-text p {  font-size: var(--size-18);}
 
 .black {  color: var(--black);}
+.white {color: var(--white);}
 
 header .header-links {
     display: flex;
@@ -111,7 +112,7 @@ button i {
     padding: var(--size-30);
 }
 
-.benefit-box .info-card img {
+.info-card img {
     width: 4.063rem;
 }
 
@@ -220,4 +221,44 @@ button i {
     margin: 0 var(--size-10);
 }
 
-.pricing-bottom {}
+.pricing-bottom {margin-top: var(--size-40);}
+
+.pricing-bottom p {
+    text-align: left;
+    margin: var(--size-70) 0;
+}
+
+.pricing-bottom p.no-card {
+    text-align: center;
+    margin-top: var(--size-30);
+}
+
+.pricing > .info-card {
+    border: none;
+    box-shadow: none;
+    padding: var(--size-30);
+}
+
+.pricing .info-card .btn {
+    background-color: #5BC6A8;
+    padding: 0.125rem var(--size-10);
+    font-weight: 500;
+    margin-left: var(--size-20);
+}
+
+.hire-us {
+    background-color: #243358;
+    text-align: center;
+    padding-top: var(--size-40);
+}
+
+.hire-us-top {
+    padding-bottom: var(--size-20);
+    border-bottom: 1px solid var(--white);
+}
+
+.hire-us-top h2 {color: var(--white);}
+
+.hire-us-testimonials p.white {
+    margin: var(--size-40) 0;
+}
