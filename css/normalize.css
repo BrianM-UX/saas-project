@@ -2,8 +2,10 @@
     --white: #fff;
     --black: #000;
     --font-color-base: #6A7686;
+    --font-color-light: rgb(119, 119, 119);
     --font-color-dark: #5F6267;
     --font-color-link: #3D74F5;
+
     --contrast: #F9FAFE;
 
     --size-10: 0.625rem;
@@ -49,12 +51,14 @@ h2,
 h3 {
     color: var(--black);
     margin: 0;
+    padding: 0;
 }
 
-p { 
+p {
     font-weight: 500;
     margin: 0;
- }
+    padding: 0;
+}
 
 img {
     width: 100%;
@@ -80,3 +84,8 @@ img {
     padding: var(--size-16);
     border-radius: var(--size-30);
 }
+
+textarea {
+    resize: none;
+}
+

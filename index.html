@@ -272,7 +272,40 @@
                 </div>
             </div>
             <div class="hire-us-form">
-                <p>Fill out the form and we'll be in touch as soon as possible</p>
+                <form action="">
+                    <p class="black">Fill out the form and we'll be in touch as soon as possible</p>
+                    <!-- Inputs -->
+                    <label for="firstName"></label>
+                    <input id="firstName" name="firstName" type="text" value="First name" class="submission">
+                    <label for="lastName"></label>
+                    <input id="lastName" name="lastName" type="text" value="Last name" class="submission">
+                    <label for="firstName2"></label>
+                    <input id="firstName2" name="firstName2" type="text" value="First name" class="submission">
+                    <label for="lastName2"></label>
+                    <input id="lastName2" name="lastName2" type="text" value="Last name" class="submission">
+                    <!-- Selections -->
+                    <label for="bugdet"></label>
+                    <select name="budget" id="budget">
+                        <option value="budget" class="black">Budget</option>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </select>
+                    <select name="country" id="country">
+                        <option value="country" class="black">Country</option>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </select>
+                    <!-- Detail Area -->
+                    <label for="details"></label>
+                    <textarea name="details" id="details" cols="30" rows="20" class="submission"></textarea>
+                    <!-- Email Opt-in -->
+                    <input name="receiveEmails" id="receiveEmails" type="checkbox" value="receiveEmails">
+                    <label for="receiveEmails"></label>
+                    <div class="checkbox-end">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#">View privacy policy</a>
+                    </div>
+                    <a href="#" class="btn">Get Started</a>
+                </form>
             </div>
         </div>
     </section>
@@ -282,37 +315,49 @@
         <div class="footer-top">
             <div class="contact">
                 <img src="assets/project_logo/logo.svg" alt="logo">
-                <i class="fa-solid fa-location-arrow"></i>
-                <p>153 Williams Plaza, Maggieway</p>
-                <i class="fa-solid fa-phone"></i>
-                <a href="#">+1 (234) 456-7890</a>
+                <div>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <a class="footer-item" href="#">153 Williams Plaza, Maggieway</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <a class="footer-item link" href="#">+1 (234) 456-7890</a>
+                </div>
             </div>
             <div class="company">
                 <h3>Company</h3>
-                <a href="#">About</a>
-                <a href="#">Career <span class="company-career">We're hiring</span></a>
-                <a href="#">Blog</a>
-                <a href="#">Customers</a>
-                <a href="#">Hire Us</a>
+                <div>
+                    <a class="footer-item" href="#">About</a>
+                    <a class="footer-item" href="#">Career <span class="company-career">We're hiring</span></a>
+                    <a class="footer-item" href="#">Blog</a>
+                    <a class="footer-item" href="#">Customers</a>
+                    <a class="footer-item" href="#">Hire Us</a>
+                </div>
             </div>
             <div class="features">
                 <h3>Features</h3>
-                <a href="#">Press</a>
-                <a href="#" class="link">Release Notes</a>
-                <a href="#">Integrations</a>
-                <a href="#">Pricing</a>
+                <div>
+                    <a class="footer-item" href="#">Press</a>
+                    <a class="footer-item" href="#" class="link">Release Notes</a>
+                    <a class="footer-item" href="#">Integrations</a>
+                    <a class="footer-item" href="#">Pricing</a>
+                </div>
             </div>
             <div class="documentation">
                 <h3>Documentation</h3>
-                <a href="#">Support</a>
-                <a href="#">Docs</a>
-                <a href="#">Status</a>
-                <a href="#">API Reference</a>
-                <a href="#">Tech Requirements</a>
+                <div>
+                    <a class="footer-item" href="#">Support</a>
+                    <a class="footer-item" href="#">Docs</a>
+                    <a class="footer-item" href="#">Status</a>
+                    <a class="footer-item" href="#">API Reference</a>
+                    <a class="footer-item" href="#">Tech Requirements</a>
+                </div>
             </div>
             <div class="resources">
-                <a href="#"><i class="fa-solid fa-circle-info"></i>Help</a>
-                <a href="#"><i class="fa-solid fa-circle-user"></i>Your Account</a>
+                <div>
+                    <a class="footer-item" href="#"><i class="fa-solid fa-circle-info"></i>Help</a>
+                    <a class="footer-item" href="#"><i class="fa-solid fa-circle-user"></i>Your Account</a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -325,10 +370,14 @@
             </div>
             <div class="footer-socials">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#" class="g"><i class="fa-brands fa-google"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
-                <select name="country" id="contry-select">United States</select>
+            </div>
+            <div class="country-choice">
+                <select name="country" id="countrySelect">
+                    <option value="country" class="black">🇺🇸 United States</option>
+                </select>
             </div>
             <div class="footer-disclaimer">
                 <p>&#169; Front. 2023 Responsive Designs. All rights reserved.</p>
