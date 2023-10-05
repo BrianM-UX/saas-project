@@ -1,4 +1,12 @@
 @media screen and (min-width: 768px) {
+    header .header-icons {margin: var(--size-70) var(--size-150);}
+    .benefit-box .info-card {
+        margin: var(--size-20) var(--size-10);
+        max-width: 21.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .nav-top .navbar-toggle {
         display: none;
     } 

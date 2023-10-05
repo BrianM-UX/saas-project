@@ -1,5 +1,5 @@
 nav {
-    position: sticky;
+
 }
 
 .navbar-brand img {
@@ -7,9 +7,10 @@ nav {
 }
 
 .nav-top {
-    padding: var(--size-20);
+    padding: var(--size-20) 0;
     display: flex;
     justify-content: space-between;
+    margin: var(--size-20) 0;
 }
 
 .nav-top .navbar-toggle {
@@ -48,11 +49,18 @@ nav {
 
 .intro-text {
     text-align: center;
-    padding: var(--size-20) 0;
+    padding: var(--size-30) 0;
+}
+
+.intro-text h2 {
+    font-size: var(--size-30);
+    font-weight: 500;
+    margin: var(--size-10) 0;
 }
 
 .intro-text p {
     font-size: var(--size-18);
+    margin: var(--size-20) 0;
 }
 
 .black {
@@ -63,11 +71,9 @@ nav {
     color: var(--white);
 }
 
-header .header-links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+header .header-links { text-align: center;}
+header .header-links .btn {margin: var(--size-10);}
+header .header-links a {margin: var(--size-10);}
 
 header .header-icons {
     display: grid;
@@ -114,34 +120,23 @@ button i {
 
 .info-card {
     margin: var(--size-20) 0;
-    border: 2px solid #EEEEEE;
-    box-shadow: 0 16px 20px 7px #E0E0E0;
+    border: 0px solid #EEEEEE;
+    box-shadow: 0 8px 12px 0px #E2E2E2;
     padding: var(--size-30);
 }
 
-.info-card img {
-    width: 4.063rem;
-}
+.info-card img {  width: 4.063rem;}
+.info-card h3 { margin: 20px 0;}
+.info-card p {  margin: var(--size-20) 0;}
 
-.benefit-box .info-card p {
-    padding: var(--size-20) 0;
-}
+.benefit-box .info-card a {  font-weight: 500;}
 
-.benefit-box .info-card a {
-    font-weight: 500;
-}
-
-.benefits-bottom {
-    background-color: #F9FAFE;
-}
-
-.benefits-bottom .intro-text {
-    padding: var(--size-50);
-}
-
-.benefits-bottom .intro-text button {
-    font-size: var(--size-16);
-}
+.benefits-bottom { background-color: #F9FAFE;}
+.benefits-bottom .intro-text h2 { 
+    margin-bottom: var(--size-20);
+    padding: var(--size-10)
+    ;}
+.benefits-bottom .intro-text button { font-size: var(--size-16);}
 
 .why-list {
     grid-template-columns: 100px auto;
@@ -159,6 +154,27 @@ button i {
     display: inline-block;
     border-radius: 50%;
 }
+
+.pick-me-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centered-content {
+    position: relative;
+  }
+  
+  .centered-content img {
+    display: block;
+  }
+  
+  .centered-content a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 .pick-me-video a {
     box-shadow: 0 0 5px 1px var(--font-color-base);
@@ -356,8 +372,13 @@ button i {
     text-align: center;
 }
 
-.footer-top h3 { font-size: var(--size-20);}
-.footer-top div {margin: var(--size-30) 0;}
+.footer-top h3 {
+    font-size: var(--size-20);
+}
+
+.footer-top div {
+    margin: var(--size-30) 0;
+}
 
 .footer-item {
     display: block;
@@ -367,9 +388,24 @@ button i {
     font-size: var(--size-18);
 }
 
-.footer-top .contact .footer-item {  display: inline;}
-.footer-top .contact .footer-item.link {color: var(--font-color-link)}
-.footer-top .resources .footer-item i {margin-right: var(--size-10);}
+.footer-top .contact .footer-item {
+    display: inline;
+}
+
+.footer-top .contact .footer-item.link {
+    color: var(--font-color-link)
+}
+
+.footer-top .resources .footer-item i {
+    margin-right: var(--size-10);
+}
+
+.footer-top a span.btn {
+    font-size: 0.438rem;
+    padding: 0.125rem;
+    border-radius: 0.125rem;
+    color: var(--white);
+}
 
 .footer-bottom-nav {
     text-align: center;
@@ -381,8 +417,11 @@ button i {
     margin: 0 0.375rem;
 }
 
-.footer-socials {text-align: center;}
-.footer-bottom .footer-socials a i{
+.footer-socials {
+    text-align: center;
+}
+
+.footer-bottom .footer-socials a i {
     font-size: var(--size-20);
     background-color: #EDF2FE;
     text-align: center;
@@ -392,12 +431,15 @@ button i {
     margin: 0 var(--size-10);
 }
 
-.footer-bottom .footer-socials a.g i{
+.footer-bottom .footer-socials a.g i {
     background-color: var(--font-color-dark);
     color: #EDF2FE;
 }
 
-.country-choice {text-align: center;}
+.country-choice {
+    text-align: center;
+}
+
 #countrySelect {
     margin: var(--size-40) 0;
     background-color: #EDF2FE;
@@ -411,7 +453,7 @@ button i {
     text-align: center;
 }
 
-.footer-disclaimer p {  
+.footer-disclaimer p {
     margin-bottom: var(--size-30);
     font-size: var(--size-16);
 }
