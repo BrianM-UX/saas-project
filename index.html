@@ -24,20 +24,18 @@
 
 <body>
     <!-- Nav -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-top">
-                <button class="navbar-toggle" aria-expanded="false" aria-controls="navbarDropdown">
-                    <div class="navbar-menu-btn">
-                        <i class="closed fa-solid fa-bars"></i>
-                        <i class="open fa-solid fa-xmark"></i>
-                    </div>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/project_logo/logo.svg" alt="logo">
-                </a>
-            </div>
-            <div class="nav-drop">
+    <nav class="container">
+        <div class="navbar">
+            <button class="navbar-toggle" aria-expanded="false" aria-controls="navbarDropdown">
+                <div class="navbar-menu-btn">
+                    <i class="closed fa-solid fa-bars"></i>
+                    <i class="open fa-solid fa-xmark"></i>
+                </div>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/project_logo/logo.svg" alt="logo">
+            </a>
+            <div class="navbar-nav">
                 <ul>
                     <li>
                         <a href="#">Home</a>
@@ -55,27 +53,23 @@
                         <a href="#">Hire Us</a>
                     </li>
                 </ul>
-                <a class="btn" href="#">Learn More</a>
+                <a class="btn" href="#">Buy Now</a>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <h2>
-                    Empowering teams with the freedom
-                </h2>
-                <p>Own the unlimited power of the web development</p>
-            </div>
-            <div class="header-links">
-                <button class="btn">
-                    <i class="fa-solid fa-circle-play"></i>
-                    Play Video
-                </button>
-                <a href="#">Learn more</a>
-            </div>
+    <header class="container">
+        <div class="header-text">
+            <h2>
+                Empowering teams with the freedom
+            </h2>
+            <p>Own the unlimited power of the web development</p>
+            <button class="btn">
+                <i class="fa-solid fa-circle-play"></i>
+                Play Video
+            </button>
+            <a href="#">Learn more</a>
         </div>
         <div class="header-icons">
             <img class="part-size-icon" src="assets/logo_icons/google.png" alt="google">
@@ -90,7 +84,7 @@
     </header>
 
     <!-- Benefits -->
-    <section class="container">
+    <section class="container benefits">
         <div class="intro-text">
             <h2>Key Benefits</h2>
             <p>Design faster with a growing array of beautiful templates</p>
@@ -142,32 +136,49 @@
             <div class="intro-text">
                 <h2>Why Front?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. A arcu cursus vitae congue mauris rhoncus aenean.</p>
+                    et dolore magna aliqua.</p>
             </div>
             <div class="why-list">
-                <div class="why-list-item">
+                <div>
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="why-list-item">
+                        <h3>Basic Elements</h3>
+                    </div>
+                </div>
+                <div class="line">
                     <span></span>
                 </div>
-                <div class="why-list-item">
-                    <h3>Basic Elements</h3>
+                <div>
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="why-list-item">
+                        <h3>Components</h3>
+                    </div>
                 </div>
-                <div class="why-list-item">
+                <div class="line">
                     <span></span>
                 </div>
-                <div class="why-list-item">
-                    <h3>Components</h3>
+                <div>
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="why-list-item">
+                        <h3>Combined components</h3>
+                    </div>
                 </div>
-                <div class="why-list-item">
+                <div class="line">
                     <span></span>
                 </div>
-                <div class="why-list-item">
-                    <h3>Combined components</h3>
-                </div>
-                <div class="why-list-item">
-                    <span></span>
-                </div>
-                <div class="why-list-item">
-                    <h3>Page layouts</h3>
+                <div>
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="why-list-item">
+                        <h3>Page layouts</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -232,25 +243,31 @@
                 </div>
             </div>
         </div>
-        <div class="info-card">
-            <img src="assets/icons/components.svg" alt="components">
-            <h3>Hundreds of components</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </div>
-        <div class="info-card">
-            <img src="assets/icons/images.svg" alt="images">
-            <h3>Images included</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </div>
-        <div class="info-card">
-            <img src="assets/icons/cancel.svg" alt="cancel">
-            <h3>Cancel anytime<span class="btn">sketch</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </div>
-        <div class="info-card">
-            <img src="assets/icons/moneyback.svg" alt="moneyback">
-            <h3>Money back</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <div class="purchase-included">
+            <div class="info-card">
+                <img src="assets/icons/components.svg" alt="components">
+                <h3>Hundreds of components</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+            </div>
+            <div class="info-card">
+                <img src="assets/icons/images.svg" alt="images">
+                <h3>Images included</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+            </div>
+            <div class="info-card">
+                <img src="assets/icons/cancel.svg" alt="cancel">
+                <h3>Cancel anytime<span class="btn">sketch</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+            </div>
+            <div class="info-card">
+                <img src="assets/icons/moneyback.svg" alt="moneyback">
+                <h3>Money back</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+            </div>
         </div>
     </section>
 

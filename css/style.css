@@ -1,86 +1,83 @@
-nav {
+.navbar {
+    padding: var(--size-20) var(--size-20);
+    display: flex;
+    justify-content: space-between;
+    margin: var(--size-20) 0;
+}
 
+.navbar .navbar-toggle {
+    display: none;
 }
 
 .navbar-brand img {
     width: var(--size-150);
 }
 
-.nav-top {
-    padding: var(--size-20) 0;
+.navbar-nav {
     display: flex;
-    justify-content: space-between;
-    margin: var(--size-20) 0;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.nav-top .navbar-toggle {
-    background-color: transparent;
-    border: none;
-    font-size: var(--size-30);
-    order: 2;
+.navbar-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-nav ul li {
+    margin: 0 var(--size-10);
+}
+
+.navbar-nav ul li a {
     color: var(--font-color-base);
 }
 
-.nav-top .navbar-toggle .open {
-    display: none;
-}
-
-.nav-drop {
-    display: none;
-    border-top: solid 2px #F5F5F5;
-    text-align: center;
-}
-
-.nav-drop ul {
-    margin-bottom: var(--size-20);
-}
-
-.nav-drop ul li {
-    padding: var(--size-20) 0;
-}
-
-.nav-drop ul li a {
-    color: var(--font-color-base);
-}
-
-.nav-drop ul .link>a {
+.navbar-nav ul .link>a {
     color: var(--font-color-link);
 }
 
-.intro-text {
-    text-align: center;
-    padding: var(--size-30) 0;
+.navbar-nav .btn {
+    width: 6.875rem;
+    margin-left: var(--size-20);
 }
 
-.intro-text h2 {
-    font-size: var(--size-30);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--size-50);
+}
+
+header .header-text {
+    width: 50%;
+    padding-right: 150px;
+}
+
+.header-text h2 {
+    font-size: var(--size-40);
     font-weight: 500;
-    margin: var(--size-10) 0;
 }
 
-.intro-text p {
-    font-size: var(--size-18);
+.header-text p {
+    font-size: var(--size-14);
     margin: var(--size-20) 0;
 }
 
-.black {
-    color: var(--black);
+header .btn {
+    margin: var(--size-10);
 }
 
-.white {
-    color: var(--white);
+header a {
+    margin: var(--size-10);
+    font-weight: 500;
 }
-
-header .header-links { text-align: center;}
-header .header-links .btn {margin: var(--size-10);}
-header .header-links a {margin: var(--size-10);}
 
 header .header-icons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 7.813rem);
+    grid-template-rows: repeat(3, var(--size-100));
     gap: var(--size-30);
-    margin: var(--size-70) 0;
 }
 
 .header-icons img {
@@ -97,7 +94,7 @@ header .header-icons {
     height: var(--size-50);
     margin: 0;
     position: relative;
-    left: var(--size-10);
+    left: var(--size-30);
 }
 
 .header-icons img:nth-child(5) {
@@ -108,73 +105,123 @@ header .header-icons {
     grid-column: 2 / 3;
 }
 
-.benefit-box {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 button i {
     width: var(--size-30);
     font-size: var(--size-20);
 }
 
 .info-card {
-    margin: var(--size-20) 0;
+    margin: var(--size-20) var(--size-10);
     border: 0px solid #EEEEEE;
     box-shadow: 0 8px 12px 0px #E2E2E2;
     padding: var(--size-30);
+    width: 14.125rem;
 }
 
-.info-card img {  width: 4.063rem;}
-.info-card h3 { margin: 20px 0;}
-.info-card p {  margin: var(--size-20) 0;}
+.info-card img {
+    width: 4.063rem;
+}
 
-.benefit-box .info-card a {  font-weight: 500;}
+.info-card h3 {
+    margin: 20px 0;
+}
 
-.benefits-bottom { background-color: #F9FAFE;}
-.benefits-bottom .intro-text h2 { 
+.info-card p {
+    margin: var(--size-20) 0;
+}
+
+.benefits {
+    margin: var(--size-100) 0;
+}
+
+.benefits .intro-text {
+    text-align: center;
+    margin-bottom: var(--size-40);
+}
+
+.benefit-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--size-50);
+}
+
+.benefit-box .info-card a {
+    font-weight: 500;
+}
+
+.benefits-bottom {
+    display: flex;
+    align-items: center;
+    padding-top: var(--size-100);
+    background-color: #F9FAFE;
+}
+
+.benefits-bottom .intro-text h2 {
     margin-bottom: var(--size-20);
-    padding: var(--size-10)
-    ;}
-.benefits-bottom .intro-text button { font-size: var(--size-16);}
+    padding: var(--size-10) var(--size-40);
+    text-align: left;
+    font-weight: 500;
+}
+
+.benefits-bottom .intro-text button {
+    font-size: var(--size-16);
+}
+
+.pick-me .intro-text {
+    text-align: center;
+    margin: 0 var(--size-150);
+    padding: 0 var(--size-40);
+}
+
+.pick-me .intro-text p {
+    font-weight: 400;
+}
 
 .why-list {
-    grid-template-columns: 100px auto;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    gap: var(--size-20);
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin: var(--size-50) 0;
 }
 
-.why-list .why-list-item span {
+.why-list .dot {
     background-color: var(--font-color-link);
-    border: #EDF2FE solid 30px;
-    padding: 6px;
+    border: #EDF2FE solid 23px;
+    padding: 3px;
     display: inline-block;
     border-radius: 50%;
+    margin: var(--size-10);
 }
 
+.why-list .line {
+    width: 11.25rem;
+    border-bottom: solid 3px #F4F5F9;
+}
+
+.why-list h3 {
+    font-size: var(--size-14);
+    font-weight: 400;
+}
 .pick-me-video {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .centered-content {
+}
+
+.centered-content {
     position: relative;
-  }
-  
-  .centered-content img {
+}
+
+.centered-content img {
     display: block;
-  }
-  
-  .centered-content a {
+}
+
+.centered-content a {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 .pick-me-video a {
     box-shadow: 0 0 5px 1px var(--font-color-base);
@@ -224,6 +271,10 @@ button i {
     margin-bottom: 0;
 }
 
+.voucher {
+    margin: var(--size-50) 0;
+}
+
 .voucher p {
     margin-top: 0;
 }
@@ -234,6 +285,7 @@ button i {
 
 .testimonial-trust h2 {
     color: #616368;
+    margin-bottom: var(--size-30);
 }
 
 .testimonial-trust img {
@@ -275,7 +327,7 @@ button i {
     margin-top: var(--size-30);
 }
 
-.pricing>.info-card {
+.purchase-included .info-card {
     border: none;
     box-shadow: none;
     padding: var(--size-30);

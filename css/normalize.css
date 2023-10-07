@@ -1,7 +1,7 @@
 :root {
     --white: #fff;
     --black: #000;
-    --font-color-base: #6A7686;
+    --font-color-base: #6F7E8E;
     --font-color-light: rgb(119, 119, 119);
     --font-color-dark: #5F6267;
     --font-color-link: #3D74F5;
@@ -76,6 +76,14 @@ img {
     margin-right: auto;
 }
 
+.black {
+    color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
+
 .btn {
     background-color: var(--font-color-link);
     color: var(--white);
@@ -83,6 +91,7 @@ img {
     border: none;
     padding: var(--size-16);
     border-radius: var(--size-30);
+    text-align: center;
 }
 
 textarea {
