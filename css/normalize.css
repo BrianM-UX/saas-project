@@ -89,7 +89,7 @@ img {
     color: var(--white);
     width: var(--size-150);
     border: none;
-    padding: var(--size-16);
+    padding: var(--size-14);
     border-radius: var(--size-30);
     text-align: center;
 }

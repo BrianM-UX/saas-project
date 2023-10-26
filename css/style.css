@@ -115,11 +115,11 @@ button i {
     border: 0px solid #EEEEEE;
     box-shadow: 0 8px 12px 0px #E2E2E2;
     padding: var(--size-30);
-    width: 14.125rem;
+    width: 13.125rem;
 }
 
 .info-card img {
-    width: 4.063rem;
+    width: 3.063rem;
 }
 
 .info-card h3 {
@@ -143,6 +143,7 @@ button i {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: var(--size-50);
+    justify-content: space-evenly;
 }
 
 .benefit-box .info-card a {
@@ -156,15 +157,19 @@ button i {
     background-color: #F9FAFE;
 }
 
+.benefits-bottom .intro-text {
+    text-align: left;
+}
+
 .benefits-bottom .intro-text h2 {
     margin-bottom: var(--size-20);
     padding: var(--size-10) var(--size-40);
-    text-align: left;
     font-weight: 500;
 }
 
 .benefits-bottom .intro-text button {
     font-size: var(--size-16);
+    margin-left: var(--size-40);
 }
 
 .pick-me .intro-text {
@@ -182,6 +187,11 @@ button i {
     justify-content: center;
     align-items: center;
     margin: var(--size-50) 0;
+    padding: 0 var(--size-100);
+}
+
+.why-list .why-list-item {
+    text-align: center;
 }
 
 .why-list .dot {
@@ -193,15 +203,21 @@ button i {
     margin: var(--size-10);
 }
 
+.why-list .why-list-text {
+    width: max-content;
+}
+
 .why-list .line {
     width: 11.25rem;
-    border-bottom: solid 3px #F4F5F9;
+    border-top: solid 3px #F4F5F9;
+    padding-top: 20px;
 }
 
 .why-list h3 {
     font-size: var(--size-14);
     font-weight: 400;
 }
+
 .pick-me-video {
     display: flex;
     justify-content: center;
@@ -235,26 +251,34 @@ button i {
     background-color: var(--white);
 }
 
+.testimonial-example {
+    display: inline-block;
+}
+
 .testimonial-image {
     margin-top: var(--size-20);
-    margin-bottom: var(--size-100);
+    display: inline-block;
+    width: 460px;
 }
 
 .testimonial-image .pic {
-    width: 80%;
+    max-width: 365px;
     position: absolute;
-    right: 10px;
+    left: 72px;
     z-index: 1;
+    margin-top: -156px;
 }
 
 .testimonial-image .dots {
-    width: 50%;
+    max-width: 195px;
     position: relative;
-    top: var(--size-100);
+    top: -54px;
 }
 
 .company-testimonial {
-    text-align: center;
+    display: inline-block;
+    max-width: 370px;
+    margin-top: 90px;
 }
 
 .company-testimonial img {
@@ -279,32 +303,55 @@ button i {
     margin-top: 0;
 }
 
-.testimonial-trust {
+.testimonial {
     text-align: center;
 }
 
-.testimonial-trust h2 {
+.testimonial h2 {
     color: #616368;
-    margin-bottom: var(--size-30);
+    margin-bottom: var(--size-40);
+}
+
+.testimonial-trust {
+    display: flex;
+    justify-content: space-between;
 }
 
 .testimonial-trust img {
-    width: var(--size-150);
-    margin: var(--size-18) 14%;
+    width: var(--size-100);
 }
 
-.info-box {
+.pricing {
+    margin: var(--size-70) 0;
+}
+
+.pricing .intro-text {text-align: center;}
+
+.pricing .intro-text h2 {
+    margin-bottom: var(--size-10);
+}
+
+.pricing .info-box {
     margin: var(--size-40) 0;
+    display: flex;
 }
 
-.info-box .info-card {
-    padding: var(--size-40);
+.pricing .info-box .purchase {
+    width: 350px;
+    text-align: left;
+}
+
+.pricing .info-box .purchase-included {
+    display: grid;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(2, 150px);
+    gap: 60px;
 }
 
 .pricing-top {
     border-bottom: 1px solid var(--font-color-base);
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: baseline;
     padding-bottom: 30px;
 }
@@ -320,17 +367,31 @@ button i {
 
 .pricing-bottom p {
     text-align: left;
+    margin-bottom: 50px;
+
 }
 
 .pricing-bottom p.no-card {
-    text-align: center;
+    text-align: left;
     margin-top: var(--size-30);
 }
 
-.purchase-included .info-card {
+
+.pricing .info-box .purchase-included .info-card {
     border: none;
     box-shadow: none;
-    padding: var(--size-30);
+    width: 17.125rem;
+}
+
+.pricing .info-box .purchase-included .info-card h3 {
+    font-size: var(--size-14);
+    margin: var(--size-14) 0;
+}
+
+.pricing .info-box .purchase-included .info-card p {
+    font-size: var(--size-10);
+    margin: var(--size-16) 0;
+    max-width: 180px;
 }
 
 .info-card h3 .btn {
