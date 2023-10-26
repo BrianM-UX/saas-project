@@ -325,7 +325,9 @@ button i {
     margin: var(--size-70) 0;
 }
 
-.pricing .intro-text {text-align: center;}
+.pricing .intro-text {
+    text-align: center;
+}
 
 .pricing .intro-text h2 {
     margin-bottom: var(--size-10);
@@ -407,18 +409,34 @@ button i {
     padding: var(--size-30) 0;
 }
 
+.hire-us-content {
+    display: flex;
+}
+
+.hire-us-testimonial-section {
+    max-width: 50%;
+    text-align: left;
+    margin: auto;
+    padding: 0 40px;
+}
+
 .hire-us-top {
     padding-bottom: var(--size-20);
     border-bottom: 1px solid var(--white);
+    width: 168px;
 }
 
 .hire-us-top h2 {
     color: var(--white);
+    margin-bottom: var(--size-10);
 }
 
 .hire-us-testimonials p.white {
     margin: var(--size-40) 0;
-    font-size: var(--size-18);
+}
+
+.hire-us-testimonials .testimonial-pic {
+    margin-top: var(--size-40);
 }
 
 .hire-us-testimonials .testimonial-pic img {
@@ -432,9 +450,9 @@ button i {
 }
 
 .hire-us-form {
+    max-width: 50%;
     background-color: var(--white);
     border-radius: var(--size-10);
-    margin-top: var(--size-40);
     padding: var(--size-40);
 }
 
