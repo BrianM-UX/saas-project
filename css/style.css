@@ -405,7 +405,6 @@ button i {
 
 .hire-us {
     background-color: #243358;
-    text-align: center;
     padding: var(--size-30) 0;
 }
 
@@ -415,7 +414,6 @@ button i {
 
 .hire-us-testimonial-section {
     max-width: 50%;
-    text-align: left;
     margin: auto;
     padding: 0 40px;
 }
@@ -456,12 +454,14 @@ button i {
     padding: var(--size-40);
 }
 
-.hire-us-form .submission {
-    width: 90%;
+.hire-us-form form>p { margin: 4px;}
+
+.hire-us-form .information .submission {
+    width: 190px;
     height: var(--size-40);
     padding: var(--size-10);
-    margin: var(--size-10);
-    font-size: var(--size-16);
+    margin: 4px;
+    font-size: var(--size-14);
     color: var(--font-color-light);
     border: 2px solid #E6E8F3;
     border-radius: 5px;
@@ -469,17 +469,12 @@ button i {
 
 #budget,
 #country {
-    width: 90%;
-    height: var(--size-40);
-    padding: 0 var(--size-10);
-    margin: var(--size-10);
-    font-size: var(--size-16);
-    border: 2px solid #E6E8F3;
-    border-radius: 5px;
+    color: var(--black);
 }
 
 #details {
     height: var(--size-150);
+    width: 97%;
 }
 
 #receiveEmails {
@@ -488,7 +483,7 @@ button i {
     margin: 0;
 }
 
-.hire-us-form .checkbox-end {
+.hire-us-form .information .checkbox-end {
     margin-bottom: var(--size-50);
 }
 
