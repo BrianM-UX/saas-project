@@ -347,7 +347,8 @@ button i {
     display: grid;
     grid-template-rows: repeat(2, 150px);
     grid-template-columns: repeat(2, 150px);
-    gap: 60px;
+    gap: 100px;
+    margin: 0 auto;
 }
 
 .pricing-top {
@@ -495,7 +496,8 @@ button i {
     margin: var(--size-100) 0 0 0;
     border-bottom: 2px solid #E6E8F3;
     padding-bottom: var(--size-40);
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-top h3 {
