@@ -28,8 +28,8 @@
         <div class="navbar">
             <button class="navbar-toggle" aria-expanded="false" aria-controls="navbarDropdown">
                 <div class="navbar-menu-btn">
-                    <i class="closed fa-solid fa-bars"></i>
-                    <i class="open fa-solid fa-xmark"></i>
+                    <i class="closed fa-solid fa-bars" aria-expanded="false"></i>
+                    <i class="open fa-solid fa-xmark" aria-expanded="false"></i>
                 </div>
             </button>
             <a class="navbar-brand" href="index.html">
@@ -285,13 +285,16 @@
         <div class="container hire-us-content">
             <div class="hire-us-testimonial-section">
                 <div class="hire-us-top">
-                    <h2>Hire Us</h2>
-                    <p>Whatever your goal - we will get you there</p>
-                </div>
-                <div class="hire-us-testimonials">
+                    <div class="hire-us-header">
+                        <h2>Hire Us</h2>
+                        <p>Whatever your goal - we will get you there</p>
+                        <hr>
+                    </div>
                     <p class="white"><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut
                             labore..."</em></p>
+                </div>
+                <div class="hire-us-testimonials">
                     <div class="info-box">
                         <h3 class="white">Charlotte Moore</h3>
                         <p>Head of Commercials, slack</p>
@@ -303,6 +306,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="hire-us-form">
                 <form action="">
                     <p class="black">Fill out the form and we'll be in touch as soon as possible</p>
@@ -331,14 +335,14 @@
                         <textarea name="details" id="details" cols="30" rows="20" class="submission"></textarea>
                         <!-- Email Opt-in -->
                         <div class="">
-                        <input name="receiveEmails" id="receiveEmails" type="checkbox" value="receiveEmails">
-                        <label for="receiveEmails"></label>
-                        <div class="checkbox-end">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor</p>
-                            <a href="#">View privacy policy</a>
-                        </div>
-                        <a href="#" class="btn">Get Started</a>
+                            <input name="receiveEmails" id="receiveEmails" type="checkbox" value="receiveEmails">
+                            <label for="receiveEmails"></label>
+                            <div class="checkbox-end">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor</p>
+                                <a href="#">View privacy policy</a>
+                            </div>
+                            <a href="#" class="btn">Get Started</a>
                         </div>
                     </div>
                 </form>
@@ -374,7 +378,7 @@
                 <h3>Features</h3>
                 <div>
                     <a class="footer-item" href="#">Press</a>
-                    <a class="footer-item" href="#" class="link">Release Notes</a>
+                    <a class="footer-item link" href="#">Release Notes</a>
                     <a class="footer-item" href="#">Integrations</a>
                     <a class="footer-item" href="#">Pricing</a>
                 </div>
@@ -398,23 +402,25 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="footer-bottom-nav">
-                <a href="#">Privacy & Policy</a>
-                <i class="fa-solid fa-greater-than"></i>
-                <a href="#" class="link">Terms</a>
-                <i class="fa-solid fa-greater-than"></i>
-                <a href="#">Site Map</a>
-            </div>
-            <div class="footer-socials">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="g"><i class="fa-brands fa-google"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="country-choice">
-                <select name="country" id="countrySelect">
-                    <option value="country" class="black">🇺🇸 United States</option>
-                </select>
+            <div class="footer-bottom-row">
+                <div class="footer-bottom-nav">
+                    <a href="#">Privacy & Policy</a>
+                    <i class="fa-solid fa-greater-than"></i>
+                    <a href="#" class="link">Terms</a>
+                    <i class="fa-solid fa-greater-than"></i>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="g"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="country-choice">
+                    <select name="country" id="countrySelect">
+                        <option value="country" class="black">🇺🇸 United States</option>
+                    </select>
+                </div>
             </div>
             <div class="footer-disclaimer">
                 <p>&#169; Front. 2023 Responsive Designs. All rights reserved.</p>
@@ -425,6 +431,28 @@
             </div>
         </div>
     </section>
+    <script>
+        // const nav = document.getElementById("topNav");
+        // window.onscroll = function () {
+        //     if (window.pageYOffset > 100) {
+        //         nav.classList.add("sticky");
+        //     } else {
+        //         nav.classList.remove("sticky");
+        //     }
+        // }
+
+
+        const navButton = document.querySelector('button[aria-expanded]');
+
+        function toggleNav({
+            target
+        }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+
+        navButton.addEventListener('click', toggleNav);
+    </script>
 </body>
 
 </html>

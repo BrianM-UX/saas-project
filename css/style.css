@@ -2,11 +2,15 @@
     padding: var(--size-20) var(--size-20);
     display: flex;
     justify-content: space-between;
-    margin: var(--size-20) 0;
+    margin:0;
 }
 
 .navbar .navbar-toggle {
     display: none;
+    order: 2;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
 }
 
 .navbar-brand img {
@@ -414,15 +418,16 @@ button i {
 }
 
 .hire-us-testimonial-section {
-    max-width: 50%;
     margin: auto;
     padding: 0 40px;
 }
 
 .hire-us-top {
     padding-bottom: var(--size-20);
-    border-bottom: 1px solid var(--white);
-    width: 168px;
+}
+
+.hire-us-top hr {
+    margin: var(--size-20) auto;
 }
 
 .hire-us-top h2 {
@@ -432,6 +437,10 @@ button i {
 
 .hire-us-testimonials p.white {
     margin: var(--size-40) 0;
+}
+
+.hire-us-header {
+    max-width: 10.625rem;
 }
 
 .hire-us-testimonials .testimonial-pic {
@@ -455,7 +464,9 @@ button i {
     padding: var(--size-40);
 }
 
-.hire-us-form form>p { margin: 4px;}
+.hire-us-form form>p {
+    margin: 4px;
+}
 
 .hire-us-form .information .submission {
     width: 190px;
@@ -495,7 +506,6 @@ button i {
 .footer-top {
     margin: var(--size-100) 0 0 0;
     border-bottom: 2px solid #E6E8F3;
-    padding-bottom: var(--size-40);
     display: flex;
     justify-content: space-between;
 }
@@ -510,7 +520,7 @@ button i {
 
 .footer-item {
     display: block;
-    margin: var(--size-10);
+    margin: var(--size-10) auto;
     color: var(--font-color-dark);
     font-weight: 500;
     font-size: var(--size-18);
@@ -520,7 +530,9 @@ button i {
     display: inline;
 }
 
-.footer-top .contact .footer-item.link {
+.footer-top .contact .footer-item.link,
+.footer-top .features .link,
+.footer-bottom-nav .link {
     color: var(--font-color-link)
 }
 
@@ -535,9 +547,13 @@ button i {
     color: var(--white);
 }
 
+.footer-bottom-row {
+    display: flex;
+    align-items: center;
+}
+
 .footer-bottom-nav {
     text-align: center;
-    margin: var(--size-40);
 }
 
 .footer-bottom-nav a {
@@ -547,6 +563,7 @@ button i {
 
 .footer-socials {
     text-align: center;
+    margin-left: auto;
 }
 
 .footer-bottom .footer-socials a i {
