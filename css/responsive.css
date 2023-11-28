@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     .navbar .navbar-toggle {
         display: block;
     }
@@ -156,4 +156,77 @@
     }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 767px) {
+    .why-list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 var(--size-50);
+    }
+
+    .why-list .why-list-item {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .why-list-item .why-list-text {
+        margin-left: var(--size-30);
+    }
+
+    .why-list-text h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .why-list .line {
+        display: none;
+    }
+
+    .testimonial-image .pic {
+        margin: var(--size-50) 4.938em;
+    }
+
+    .testimonial-image .dots {
+        margin: var(--size-150) var(--size-70) 0;
+    }
+
+    .testimonial-trust {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-trust img {
+        margin: var(--size-20) 0;
+    }
+
+    .pricing .info-box .purchase-included {
+        grid-template-columns: minmax(100vw, auto);
+    }
+
+    .pricing .info-box .purchase-included .info-card {
+        width: 100%;
+    }
+
+    .pricing .info-box .purchase-included .info-card p {
+        max-width: 75vw;
+    }
+
+    .hire-us-testimonial-section {
+        flex-direction: column;
+    }
+
+    .hire-us-testimonial-section .hire-us-top {
+        text-align: center;
+        max-width: fit-content;
+    }
+
+    .hire-us-testimonials {
+        text-align: center;
+        margin: var(--size-50) auto;
+    }
+
+    .hire-us-form .information .submission,
+    #details {
+        width: 100%;
+    }
+}
