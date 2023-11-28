@@ -107,6 +107,52 @@
     .hire-us-testimonial-section {
         display: flex;
         padding: 0;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .hire-us-top {
+        max-width: 24rem;
+    }
+
+    .hire-us-header {
+        max-width: 100%;
+    }
+
+    .hire-us-testimonials {
+        margin: auto;
+    }
+
+    .hire-us-form {
+        max-width: fit-content;
+    }
+
+    .hire-us-form .information .submission {
+        width: 19.25rem;
+    }
+
+    .email-op .btn {
+        margin: 16.438rem;
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .footer-top .company {
+        grid-column: 3 / 4;
+    }
+
+    .footer-top .features {
+        grid-column: 4 / 5;
+    }
+
+    .footer-top .documentation {
+        grid-column: 3 / 4;
+    }
+
+    .footer-top .resources {
+        grid-column: 4 / 5;
     }
 }
 

@@ -469,7 +469,7 @@ button i {
 }
 
 .hire-us-form .information .submission {
-    width: 190px;
+    width:11.875rem;
     height: var(--size-40);
     padding: var(--size-10);
     margin: 4px;
@@ -506,8 +506,10 @@ button i {
 .footer-top {
     margin: var(--size-100) 0 0 0;
     border-bottom: 2px solid #E6E8F3;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-rows: minmax(350px, auto);
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--size-30);
 }
 
 .footer-top h3 {
@@ -516,6 +518,10 @@ button i {
 
 .footer-top div {
     margin: var(--size-30) 0;
+}
+
+.footer-top .contact {
+    grid-column: 1 / 3;
 }
 
 .footer-item {
