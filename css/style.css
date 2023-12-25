@@ -2,7 +2,7 @@
     padding: var(--size-20) var(--size-20);
     display: flex;
     justify-content: space-between;
-    margin:0;
+    margin: 0;
 }
 
 .navbar .navbar-toggle {
@@ -281,7 +281,7 @@ button i {
 
 .company-testimonial {
     display: inline-block;
-    max-width: 370px;
+    max-width: 50%;
     margin-top: 90px;
 }
 
@@ -468,8 +468,12 @@ button i {
     margin: 4px;
 }
 
+.hire-us-form .information {
+    text-align: center;
+}
+
 .hire-us-form .information .submission {
-    width:11.875rem;
+    width: 47%;
     height: var(--size-40);
     padding: var(--size-10);
     margin: 4px;
@@ -495,12 +499,28 @@ button i {
     margin: 0;
 }
 
+.hire-us-form .information .email-op {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.hire-us-form .information .email-op .btn {
+    margin: auto;
+}
+
 .hire-us-form .information .checkbox-end {
     margin-bottom: var(--size-50);
+    width: 80%;
+    text-align: left;
+    margin-left: var(--size-20);
 }
 
 .footer-top .contact img {
     width: var(--size-150);
+
 }
 
 .footer-top {
