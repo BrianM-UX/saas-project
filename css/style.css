@@ -159,6 +159,7 @@ button i {
     align-items: center;
     padding-top: var(--size-100);
     background-color: #F9FAFE;
+    justify-content: center;
 }
 
 .benefits-bottom .intro-text {

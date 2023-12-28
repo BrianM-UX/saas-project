@@ -4,35 +4,47 @@
     }
 
 
-    .navbar-toggle navbar-menu-btn {
+    .navbar-menu-btn {
         color: #666;
         font-size: 20px;
         cursor: pointer;
         pointer-events: none;
     }
 
-    [aria-controls="navButton"] {
-        display: block;
-
+    .navbar .opened {
+        display: none;
     }
+
+    .navbar-nav .btn {
+        margin: 0%;
+    }
+
+
 
     [aria-expanded="false"]~.navbar-nav {
         display: none;
     }
 
-    [aria-expanded="false"]~.navbar-menu-btn open {
-        display: none;
-    }
-
-    [aria-expanded="true"]~.navbar-menu-btn closed {
-        display: none;
-    }
-
     [aria-expanded="true"]~.navbar-nav {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        text-align: center;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100vw;
+        border-top: 1px solid lightgray;
+        padding-top: 60px;
+        background: white;
+        padding-bottom: 7500px;
+        z-index: 10;
+    }
+
+    .navbar-nav ul {
+        font-size: var(--size-20);
     }
 
     header {
@@ -128,7 +140,7 @@
     }
 
     .hire-us-form .information .submission {
-        width: 19.25rem;
+        width: 48%;
     }
 
     .email-op .btn {
@@ -161,6 +173,13 @@
     header .header-text {
         width: 100%;
     }
+
+    .navbar-nav ul {
+        flex-direction: column;
+        gap: var(--size-50);
+        font-size: var(--size-30);
+    }
+
     .why-list {
         flex-direction: column;
         align-items: flex-start;
@@ -271,7 +290,7 @@
         align-items: center;
     }
 
-    .footer-bottom-nav  {
+    .footer-bottom-nav {
         margin: var(--size-50) auto;
     }
 
