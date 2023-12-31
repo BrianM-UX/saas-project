@@ -256,10 +256,6 @@ button i {
     background-color: var(--white);
 }
 
-.testimonial-example {
-    display: inline-block;
-}
-
 .testimonial-image {
     margin-top: var(--size-20);
     display: inline-block;
